@@ -11,7 +11,7 @@ vol.addEventListener("change", function() {
   let images = document.querySelectorAll("img");
   let val = vol.value;
   console.log(val/100);
-  obj.volume = val/100;
+  obj.volume = val/100; 
   if(val == 0){
     images[1].src = "assets/icons/volume-level-0.svg";
     images[1].alt = "Volume Level 0";
