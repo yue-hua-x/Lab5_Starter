@@ -14,7 +14,7 @@ vol.addEventListener("change", function() {
     let images = document.querySelectorAll("img");
     let val = vol.value;
     console.log(val/100);
-    obj.volume = val/100; 
+    obj[0].volume = val/100; 
     if(val == 0){
       images[1].src = "assets/icons/volume-level-0.svg";
       images[1].alt = "Volume Level 0";
@@ -40,7 +40,7 @@ function updateDropdown(event){
   type = event.target.value;
 }
 function playSound(){
-  audio.volume = document.getElementById('volume').value/100;
+  //audio.volume = document.getElementById('volume').value/100;
   audio.play();
   if(type == "party-horn"){
     jsConfetti.addConfetti();
