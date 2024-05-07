@@ -8,6 +8,7 @@
   "type": "module",
   "jest":{
     "tranform": {},
-    "verbose": true  
+    "verbose": true,
+    "type": "module" 
   }
 }
