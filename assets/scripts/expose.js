@@ -34,8 +34,8 @@ vol.addEventListener("change", function() {
 }
 
 function updateDropdown(event){
-  document.getElementsByTagName('img')[0].src="/assets/images/"+event.target.value+".svg";
-  document.getElementsByTagName('audio')[0].src="/assets/audio/"+event.target.value+".mp3";
+  document.getElementsByTagName('img')[0].src="assets/images/"+event.target.value+".svg";
+  document.getElementsByTagName('audio')[0].src="assets/audio/"+event.target.value+".mp3";
   audio.type='audio/mpeg';
   type = event.target.value;
 }
